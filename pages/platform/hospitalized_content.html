@@ -1,0 +1,25 @@
+
+<div class="content-div">
+    <table id="listDataPersonal3"class="easyui-datagrid" style="width:100%">
+    </table>
+</div>
+<div id="listDataPersonalTool3" class="tool"style="display:none">
+    老人姓名:
+    <input class="" style="width:100px" placeholder="请输入老人姓名">
+    身份证号码:
+    <input class="" style="width:100px" placeholder="请输入身份证号">
+    定位卡编号:
+    <input class="" style="width:100px" placeholder="请输入编号">
+    状态:
+    <input class="easyui-combobox" style="width:100px"url="../../api/status.json"
+           valueField="id" textField="text">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-search">Search</a>
+    <span class="tool-span">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true">出院登记</a>
+            <!--<a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true"></a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-cut" plain="true"></a>-->
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true">家属信息</a>
+        </span>
+</div>
+<script type="text/javascript" src="../../script/hospitalized.js"></script>

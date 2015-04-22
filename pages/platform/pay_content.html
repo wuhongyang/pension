@@ -1,0 +1,18 @@
+<div class="content-div">
+    <!--<table id="listData"class="easyui-datagrid" style="width:100%" data-options="url:'../../api/mechanism.json',method:'get',singleSelect:true,fit:true,fitColumns:true">-->
+    <table id="listData1"class="easyui-datagrid" style="width:100%">
+    </table>
+</div>
+<div id="myTool1" class="tool"style="display:none">
+    老人姓名:
+    <input class="" style="width:100px" placeholder="请输入老人姓名">
+    身份证号码:
+    <input class="" style="width:100px" placeholder="请输入身份证号">
+    From: <input class="easyui-datebox" style="width:80px">
+    To: <input class="easyui-datebox" style="width:80px">
+    交费类型:
+    <input class="easyui-combobox" style="width:100px"url="../../api/type.json"
+           valueField="id" textField="text">
+    <a href="#" class="easyui-linkbutton" iconCls="icon-search">Search</a>
+</div>
+<script type="text/javascript" src="../../script/pay.js"></script>

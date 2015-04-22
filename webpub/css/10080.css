@@ -1,0 +1,280 @@
+/* CSS Document */
+body{
+	line-height: 2;
+	font-size: 14px;
+background:url(../../webpub/resource/10030/Image/zkxbx/2-8.jpg);
+	margin: auto;
+	padding: 0px;
+
+}
+TD {
+	FONT-SIZE: 12px;
+	COLOR: #000000;
+	LINE-HEIGHT: 23px;
+	text-decoration: none;
+}
+
+img{
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	width: 100%;
+}
+h1,ul,li,h2,h3{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+a{
+	color: #000000;
+	text-decoration: none;
+}
+a:hover{
+	color: #3492d2;
+}
+.nav,.nav  a{
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.banner{
+	background-image: url(../../webpub/resource/10030/Image/zkxbx/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #3492d2;
+}
+.b1{	background-image: url(../../webpub/resource/10030/Image/zkxbx/b1.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #2d8ad0;}
+.weiruan{	font-family: "微软雅黑";
+	font-size: 16px;}
+/*.foot{
+	background-color: #2878b3;
+}*/
+.foot,.foot a{
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+.h1{
+	font-size: 36px;
+	font-weight: lighter;
+}.h2{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	text-align: center;
+	font-weight: lighter;
+}.h3{
+	font-size: 24px;
+	color: #e3e3e3;
+}
+.email {
+	background-image: url(../../webpub/resource/10030/Image/zkxbx/email.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 36px;
+	width: 422px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.name {
+	background-image: url(../../webpub/resource/10030/Image/zkxbx/name.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 192px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.tel {
+	background-image: url(../../webpub/resource/10030/Image/zkxbx/tel.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 36px;
+	width: 193px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.content {
+	background-image: url(../../webpub/resource/10030/Image/zkxbx/content.png);
+	background-repeat: no-repeat;
+	height: 76px;
+	width: 432px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #5293c2;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.foot input[type=text],.foot input[type=password],textarea{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #b1c1d1;
+}
+input[type=text],input[type=password],textarea{  
+    -moz-border-radius: 5px;      /* Gecko browsers */
+    -webkit-border-radius: 5px;   /* Webkit browsers */
+    border-radius:5px;  }
+.login .title {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: bold;
+	color: #666666; cursor:pointer
+}
+.login {
+	font-family: "微软雅黑";
+}
+
+.login .selecttitle {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;cursor:pointer
+}
+
+	.foot .copy {
+	line-height: 1.5;
+
+
+}
+	.foot .copy,.foot .copy a {
+	color: #e5e3e4;
+}
+.nav1{
+	background-image: url(../../webpub/resource/10030/Image/zkxbx/li.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #2d8ad0;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	text-align: left;
+	text-indent: 30px;
+	line-height: 50px;
+}
+.leftdh{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eeeeee;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}.postion {
+	font-family: "微软雅黑";
+	font-size: 22px;
+	color: #555555;
+	line-height: 53px;
+	font-weight: lighter;
+}
+.line{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dddddd;
+}
+.red{
+	color: #FF0000;
+}
+.user{
+	background-image: url(../../webpub/resource/10030/Image/zkxbx/user.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 32px;
+	width: 265px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	color: #666666;
+	font-size: 12px;
+	text-align: left;
+	text-indent: 10px;
+	line-height: 32px;
+}
+.pass{
+	background-image: url(../../webpub/resource/10030/Image/zkxbx/pass.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 32px;
+	width: 265px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size: 12px;
+	color: #666666;
+	text-align: left;
+	text-indent: 10px;
+	line-height: 32px;
+}
+#slogin{ display:none}
+.fpass{
+	margin-left:-100%;
+	z-index: 999;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #666666;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	padding-right: 195px;
+	padding-left: 10px;
+	cursor:text;
+
+}
+.pass{margin-left:0px;z-index: 1;}
+
+
+
+
+
+
+
+
+
+
+
+
+

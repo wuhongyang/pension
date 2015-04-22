@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>管理平台</title>
+    <link rel="stylesheet" type="text/css" href="../../plugin/easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/easyui/themes/default/accordion.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/easyui/demo/demo.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/easyui/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../../webpub/css/reset.css">
+    <script type="text/javascript" src="../../plugin/easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../../plugin/easyui/jquery.easyui.min.js"></script>
+    <script src="../../plugin/basic/highcharts.js"></script>
+</head>
+<body>
+<div class="easyui-layout main-content">
+    <div data-options="region:'north'" class="north" >
+        <div><img border="0" alt="智慧养老云服务器平台" width="336" height="81" src="../../webpub/resource/10030/Image/zkxbx/logo.jpg" /></div>
+        <ul class="head_user">
+            <li><i class="i_user"></i><span id="userName" style="font-size: large;">admin</span></li>
+            <li>|</li>
+            <li><a class="pointer" id="btn-cancel" style="font-size: large;font-weight: bold;">退出</a></li>
+        </ul>
+    </div>
+    <!--<div data-options="region:'south'"></div>
+    <div data-options="region:'east'"></div>-->
+    <div data-options="region:'west'" title="我的桌面" style="width:200px;">
+        <div id="tt"  style="height:100%">
+            <div title="管理" id="manager-my" class="first">
+                <div class="easyui-accordion">
+                    <div title="基础信息"style="text-align:center;overflow:auto;padding:10px;">
+                       <ul class="my-ul">
+                           <li><a class="link" name="mechanism">机构信息</a></li>
+                           <li><a class="link"  name="personnel">人事信息</a></li>
+                           <li><a class="link"  name="bed">固定资产</a></li>
+                           <li><a class="link"  name="assets">楼栋管理</a></li>
+                       </ul>
+                    </div>
+                    <div title="业务管理" style="text-align:center;padding:10px;">
+                        <ul class="my-ul">
+                            <li><a class="link" name="hospitalized">入院管理</a></li>
+                            <li><a class="link"  name="oldStatistics">老人情况统计</a></li>
+                            <li><a class="link"  name="bedStatistics">床位情况统计</a></li>
+                            <!--<li><a class="link"  name="oldMan">老人信息</a></li>-->
+                            <li><a class="link"  name="outSearch">外出查询</a></li>
+                            <li><a class="link"  name="pay">缴费查询</a></li>
+                            <li><a class="link"  name="outRegistration">外出登记</a></li>
+                            <li><a class="link"  name="leaveHospital">出院查询</a></li>
+                            <li><a class="link"  name="arrears">欠费查询</a></li>
+                        </ul>
+                    </div>
+                    <div title="统计查询"style="text-align:center;padding:10px;">
+                        <ul class="my-ul">
+                            <li><a class="link" href="javascript:void(0)" name="personnelBedStatistics">人事床位统计</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div title="服务" class="first">
+                <div class="easyui-accordion">
+                    <div title="健康管理"style="text-align:center;overflow:auto;padding:10px;top:20px">
+                        <ul class="my-ul">
+                            <li><a class="link" name="healthRegister">健康登记</a></li>
+                            <li><a class="link"  name="healthStatistics">健康统计</a></li>
+                            <li><a class="link"  name="drugDeposit">药品缴存</a></li>
+                            <li><a class="link"  name="applicationSettings">用药设置</a></li>
+                            <li><a class="link"  name="drugRegistration">用药登记</a></li>
+                            <li><a class="link"  name="remainingDrugs">剩余药品查询</a></li>
+                            <li><a class="link"  name="drugDictionary">药品字典</a></li>
+                        </ul>
+                    </div>
+                    <div title="家属互动" style="text-align:center;padding:10px;">
+                        <ul class="my-ul">
+                            <li><a class="link" name="familyInformation">同步家属信息</a></li>
+                            <li><a class="link"  name="familyCounseling">家属咨询</a></li>
+                            <li><a class="link"  name="foodMaintenance">食物维护</a></li>
+                            <li><a class="link"  name="foodManagement">食谱管理</a></li>
+                            <li><a class="link"  name="viewRecipes">查看食谱</a></li>
+                        </ul>
+                    </div>
+                    <div title="护工监管"style="text-align:center;padding:10px;">
+                        <ul class="my-ul">
+                            <li><a class="link" name="nursingManagement">护工管理</a></li>
+                            <li><a class="link"  name="nursingPacket">护工分组</a></li>
+                            <li><a class="link"  name="nurseScheduling">护工排班</a></li>
+                            <li><a class="link"  name="nursesTurnover">离职护工</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div title="设置" class="first">
+                <div class="easyui-accordion">
+                    <div title="信息设置"style="text-align:center;overflow:auto;padding:10px;">
+                        <ul class="my-ul">
+                            <li><a class="link" name="checkProject">检查项目设置</a></li>
+                            <li><a class="link"  name="checkList">检查单设置</a></li>
+                            <li><a class="link"  name="nursingProject">护理项目设置</a></li>
+                            <li><a class="link"  name="levelCare">护理级别设置</a></li>
+                            <li><a class="link"  name="levelCareSee">护理级别查看</a></li>
+                            <li><a class="link"  name="handheldDevice">手持设备管理</a></li>
+                        </ul>
+                    </div>
+                    <div title="权限设置" style="text-align:center;padding:10px;">
+                        <ul class="my-ul">
+                            <li><a class="link" name="menManager">人员管理</a></li>
+                            <li><a class="link"  name="assignPermissions">权限分配</a></li>
+                                <li><a class="link"  name="departmentManagement">部门管理</a></li>
+                            <li><a class="link"  name="changePass">修改密码</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div title="系统" class="first">
+                <div class="easyui-accordion">
+                    <div title="权限管理"style="text-align:center;overflow:auto;padding:10px;">
+                        <ul class="my-ul">
+                            <li><a class="link" name="menManager">用户管理</a></li>
+                            <li><a class="link"  name="departmentManagement">部门管理</a></li>
+                            <li><a class="link"  name="assignPermissions">分配角色</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'center'" class="center">
+        <div id="tabs" class="easyui-tabs" data-options="fit:true,border:false,plain:true">
+            <div title="主页" data-options="cache:true,href:'main.html'" style="padding:10px">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../script/home.js"></script>
+
+</body>
+</html>
